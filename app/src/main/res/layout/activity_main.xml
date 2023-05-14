@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rgbg"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/wood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Woodbond"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/baseline_security_24"
+        android:drawablePadding="10dp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:shadowColor="#131313"
+        android:textColorHighlight="#121111"
+        android:textColorLink="#131313" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@color/material_dynamic_neutral10"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/black"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pass"
+        tools:layout_editor_absoluteX="161dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="265dp" />
+
+    <TextView
+        android:id="@+id/idk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont Have An Account?"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/forgotPassword"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/google" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/instagram"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/instagram" />
+
+    <ImageView
+        android:id="@+id/wa"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/wa" />
+    />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
